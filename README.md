@@ -173,6 +173,3 @@ docker pull tanuj7777777/boardgame-app
 
 ---
 
-## 📬 Contact
-
-If you want to discuss this project or collaborate, feel free to connect.
