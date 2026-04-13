@@ -1,53 +1,174 @@
-# BoardgameListingWebApp
+# 🚀 BoardGame Review App with CI/CD & Kubernetes Deployment
 
-## Description 
+## 📌 Overview
 
-**Board Game Database Full-Stack Web Application.**
-This web application displays lists of board games and their reviews. While anyone can view the board game lists and reviews, they are required to log in to add/ edit the board games and their reviews. The 'users' have the authority to add board games to the list and add reviews, and the 'managers' have the authority to edit/ delete the reviews on top of the authorities of users.  
+Production-ready full-stack Board Game Review application built using Spring Boot and deployed using a complete DevOps pipeline.
 
-## Technologies
+This project demonstrates **end-to-end DevOps practices** including CI/CD automation, containerization, security scanning, and Kubernetes deployment.
 
-- Java
-- Spring Boot
-- Amazon Web Services(AWS) EC2
-- Thymeleaf
-- Thymeleaf Fragments
-- HTML5
-- CSS
-- JavaScript
-- Spring MVC
-- JDBC
-- H2 Database Engine (In-memory)
-- JUnit test framework
-- Spring Security
-- Twitter Bootstrap
-- Maven
+Users can browse, add, and review board games, while role-based access control ensures proper authorization between users and managers.
 
-## Features
+---
 
-- Full-Stack Application
-- UI components created with Thymeleaf and styled with Twitter Bootstrap
-- Authentication and authorization using Spring Security
-  - Authentication by allowing the users to authenticate with a username and password
-  - Authorization by granting different permissions based on the roles (non-members, users, and managers)
-- Different roles (non-members, users, and managers) with varying levels of permissions
-  - Non-members only can see the boardgame lists and reviews
-  - Users can add board games and write reviews
-  - Managers can edit and delete the reviews
-- Deployed the application on AWS EC2
-- JUnit test framework for unit testing
-- Spring MVC best practices to segregate views, controllers, and database packages
-- JDBC for database connectivity and interaction
-- CRUD (Create, Read, Update, Delete) operations for managing data in the database
-- Schema.sql file to customize the schema and input initial data
-- Thymeleaf Fragments to reduce redundancy of repeating HTML elements (head, footer, navigation)
+## 🏗️ Architecture Diagram
 
-## How to Run
+![CI/CD Pipeline](./assets/pipeline.png)
 
-1. Clone the repository
-2. Open the project in your IDE of choice
-3. Run the application
-4. To use initial user data, use the following credentials.
-  - username: bugs    |     password: bunny (user role)
-  - username: daffy   |     password: duck  (manager role)
-5. You can also sign-up as a new user and customize your role to play with the application! 😊
+---
+
+## ⚙️ Tech Stack
+
+### Backend
+
+* Java
+* Spring Boot
+* Spring MVC
+* Spring Security
+* JDBC
+* H2 Database
+
+### Frontend
+
+* Thymeleaf
+* HTML5, CSS3, JavaScript
+* Bootstrap
+
+### DevOps & Tools
+
+* Docker
+* Kubernetes
+* Jenkins
+* SonarQube
+* Trivy
+* Nexus Repository
+* AWS EC2
+
+### Testing
+
+* JUnit
+
+---
+
+## 🔄 DevOps Implementation
+
+* CI/CD pipeline using Jenkins
+* Automated build and test using Maven
+* Code quality analysis with SonarQube
+* Vulnerability scanning using Trivy
+* Artifact storage using Nexus Repository
+* Docker containerization
+* Kubernetes deployment
+* Monitoring using Prometheus and Grafana
+
+---
+
+## ✨ Features
+
+* Role-based authentication (User / Manager)
+* Secure login using Spring Security
+* CRUD operations for board games and reviews
+* Responsive UI using Bootstrap
+* Full-stack web application
+* Deployed on AWS EC2
+* Integrated CI/CD pipeline
+
+---
+
+## 👥 User Roles
+
+* **Guest (Non-member)**
+
+  * View board games and reviews
+
+* **User**
+
+  * Add board games
+  * Write reviews
+
+* **Manager**
+
+  * Edit and delete reviews
+  * All user permissions
+
+---
+
+## ▶️ Running the Application
+
+### 1. Clone the Repository
+
+```
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+```
+
+### 2. Build the Project
+
+```
+mvn clean package
+```
+
+### 3. Run the Application
+
+```
+java -jar target/*.jar
+```
+
+### 4. Access the App
+
+```
+http://localhost:8080
+```
+
+---
+
+## 🐳 Docker Setup
+
+### Build Image
+
+```
+docker build -t yourusername/boardgame-app .
+```
+
+### Run Container
+
+```
+docker run -p 8080:8080 yourusername/boardgame-app
+```
+
+---
+
+## ☁️ Deployment
+
+* Application deployed on AWS EC2
+* Docker container used for consistent deployment
+* Kubernetes used for container orchestration
+
+---
+
+## 🔐 Demo Credentials (Optional)
+
+* **User**
+
+  * Username: bugs
+  * Password: bunny
+
+* **Manager**
+
+  * Username: daffy
+  * Password: duck
+
+---
+
+## 📈 Future Improvements
+
+* Add persistent database (MySQL/PostgreSQL)
+* Implement Infrastructure as Code using Terraform
+* Add centralized logging (ELK Stack)
+* Implement auto-scaling in Kubernetes
+* Improve security with secret management tools
+
+---
+
+## 📬 Contact
+
+If you want to discuss this project or collaborate, feel free to connect.
