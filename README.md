@@ -16,8 +16,6 @@ Users can browse, add, and review board games, while role-based access control e
 
 ---
 
-## ⚙️ Tech Stack
-
 ### Backend
 
 * Java
@@ -97,8 +95,8 @@ Users can browse, add, and review board games, while role-based access control e
 ### 1. Clone the Repository
 
 ```
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/TanUjNimkar/end-to-end-devops-cicd-pipeline.git
+cd end-to-end-devops-cicd-pipeline
 ```
 
 ### 2. Build the Project
@@ -126,13 +124,19 @@ http://localhost:8080
 ### Build Image
 
 ```
-docker build -t yourusername/boardgame-app .
+docker build -t tanuj7777777/boardgame-app .
 ```
 
 ### Run Container
 
 ```
-docker run -p 8080:8080 yourusername/boardgame-app
+docker run -p 8080:8080 tanuj7777777/boardgame-app
+```
+
+### Pull from Docker Hub
+
+```
+docker pull tanuj7777777/boardgame-app
 ```
 
 ---
