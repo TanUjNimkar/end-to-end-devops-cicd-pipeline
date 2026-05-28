@@ -12,7 +12,7 @@ RUN mvn -B -q -DskipTests dependency:go-offline
 COPY src ./src
 
 # Build the JAR (skip tests for faster build)
-RUN mvn clean package -DskipTests
+RUN mvn clean package -DskipTestsw
 
 # ===== Runtime Stage =====
 FROM eclipse-temurin:17-jre-alpine
