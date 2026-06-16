@@ -1,5 +1,5 @@
 pipeline {
-    agent anyx
+    agent any
     
     tools {x
         jdk 'jdk17'x
