@@ -2,7 +2,7 @@ pipeline {
     agent anyx
     
     tools {x
-        jdk 'jdk17'
+        jdk 'jdk17'x
         maven 'maven3'x
     }
     
